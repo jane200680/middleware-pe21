@@ -27,5 +27,13 @@
 ### Significa que el servidor ya no estaba corriendo o se apagó/crasheó. 
 ### Por eso no llega ni a validar la clave ni a revisar la ruta.
 
+## Testing
+
+### Se implementaron pruebas unitarias utilizando Jest para validar los middlewares del proyecto.
+
+### Ejecución de pruebas
+
+### npm test
+
 
  
