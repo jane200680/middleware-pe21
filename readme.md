@@ -57,3 +57,12 @@ Servidor corriendo en `http://localhost:3000`. Autenticacion: header `x-api-key:
 ### Escenario 4 — POST /v2/inscripciones con payment_method inválido (esperado: 400)
 
 ![v2 400 valor inválido](docs/screenshots/04-v2-400-inválido.png)
+
+## Validación OpenAPI
+
+Resultado de `npx @redocly/cli lint openapi.yaml`:
+
+![Redocly lint sin errores](docs/screenshots/lint-sin-errores.png)
+
+## Reflexión: si otro equipo consumiera esta API
+### Cambiaría el contrato OpenAPI agregando ejemplos completos de las respuestas JSON para todos los códigos de estado, especialmente 201, 400 y 401, además de corregir y mantener nombres de endpoints claros como /health. Esto beneficia a un consumidor externo porque le permite entender rápidamente qué datos enviará y recibirá la API, facilita la integración con su aplicación y reduce errores durante el desarrollo al tener un contrato más claro y fácil de interpretar.

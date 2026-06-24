@@ -107,4 +107,3 @@ components:
               enum: [debit, credit, scholarship]
       unevaluatedProperties: false
 
-
